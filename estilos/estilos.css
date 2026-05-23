@@ -1,3 +1,16 @@
+:root {
+  /* Cores Principais do Tema */
+  --cor-primaria: darkblue;
+  --cor-texto-escuro: #222;
+  --cor-texto-suave: #333;
+  --cor-fundo-claro: #eee;
+  --cor-borda-suave: rgba(0, 0, 0, 0.2);
+
+  /* Padrões de Espaçamento e Tipografia */
+  --espacamento-padrao: 1em;
+  --linha-guia: 1.5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +19,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #222;
+  line-height: var(--linha-guia);
+  color: var(--cor-texto-escuro);
   background: #fff;
-  margin: 0;
 }
 
 main {
@@ -17,7 +29,7 @@ main {
 }
 
 nav {
-  background-color: darkblue;
+  background-color: var(--cor-primaria);
   padding: 10px;
 }
 
@@ -28,28 +40,28 @@ nav a {
 }
 
 h1 {
-  color: darkblue;
+  color: var(--cor-primaria);
 }
 
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid darkblue;
+  border: 1px solid var(--cor-primaria);
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
 
 p {
-  padding: 0px;
+  padding: 0; /* Simplificado para apenas 0 */
 }
 
 aside {
   width: 20em;
-  margin: 1em;
-  border: 1px solid rgb(0, 0, 0, 0.2);
-  padding: 1em;
-  background-color: #eee;
-  color: #333;
+  margin: var(--espacamento-padrao);
+  border: 1px solid var(--cor-borda-suave); /* Corrigido para rgba e puxando a variável */
+  padding: var(--espacamento-padrao);
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-suave);
   text-align: center;
 }
 
@@ -59,7 +71,7 @@ aside img {
 }
 
 footer {
-  margin-top: 1em;
+  margin-top: var(--espacamento-padrao);
   border-top: 1px solid rgb(0, 0, 0);
   text-align: center;
 }
