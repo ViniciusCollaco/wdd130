@@ -1,11 +1,12 @@
 :root {
   --cor-primaria: #8b0000;
   --cor-segundaria: #b8860b;
-  --cor-destaque1: #a9a9a9;
-  --cor-destaque2: rgba(0, 0, 0, 0.2);
-  --fonte-titulo: "Times New Roma", "Georgia", serif;
+  --cor-destaque1: #000;
+  --cor-destaque2: #fff;
+  --fonte-titulo: "Times New Roman", "Georgia", serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,75 @@ body {
 header,
 main,
 footer {
-  width: 1000px;
+  width: 840px;
   margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: var(--cor-destaque1);
+  color: var(--cor-destaque2);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.hero article img {
+  float: right;
+  width: 150px;
+  border: 1px solid var(--cor-destaque1);
+  margin: 0 0 10px 15px;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
 }
