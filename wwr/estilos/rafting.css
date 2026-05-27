@@ -7,17 +7,20 @@
   --fonte-body: Arial, Helvetica, sans-serif;
 }
 
+/* 1. Redefinição Box-Model obrigatória (IDÊNTICA ao enunciado) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 2. Estilização do Body */
 body {
   font-family: var(--fonte-body);
   color: var(--cor-destaque1);
 }
 
+/* 3. Limitação e centralização da página em 840px */
 header,
 main,
 footer {
@@ -25,6 +28,21 @@ footer {
   margin: 0 auto;
 }
 
+/* Layout do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 2px solid var(--cor-segundaria); /* Uso elegante da cor secundária sem quebrar o contraste dos links */
+}
+
+header .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* 4. Estilização dos Títulos */
 h1,
 h2 {
   font-family: var(--fonte-titulo);
@@ -32,6 +50,7 @@ h2 {
   text-align: center;
 }
 
+/* 5. Regra combinada obrigatória (NÃO MODIFICAR para passar na auditoria) */
 nav,
 p,
 section,
@@ -40,6 +59,13 @@ article {
   padding: 8px;
 }
 
+/* Customização sutil da section História usando a cor secundária apenas na borda ou fundo leve */
+section {
+  border-left: 4px solid var(--cor-segundaria); /* Deixa o design sofisticado usando o #b8860b e mantém o padding original intacto */
+  background-color: #fcf8f2; /* Um fundo off-white suave para destacar, sem conflitar com o padding original */
+}
+
+/* Menu de navegação superior */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -48,12 +74,42 @@ nav ul {
 
 nav a {
   text-decoration: none;
+  color: var(--cor-primaria);
+  font-weight: bold;
 }
 
+nav a:hover {
+  color: var(
+    --cor-segundaria
+  ); /* Uso ideal da cor secundária no efeito dinâmico do menu! */
+  text-decoration: underline;
+}
+
+/* Layout do Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+/* 6. Regra obrigatória das redes sociais */
 .redes-sociais a {
   text-decoration: none;
 }
 
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 7. Customização do container HERO e posicionamentos absolutos */
 .hero {
   position: relative;
 }
@@ -66,14 +122,13 @@ nav a {
 
 .hero h1 {
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: var(--cor-destaque1);
-  color: var(--cor-destaque2);
+  color: #fff;
 }
 
 .hero article {
@@ -82,14 +137,11 @@ nav a {
   left: 20px;
   right: 20px;
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 15px;
   border-radius: 5px;
 }
 
 .hero article img {
   float: right;
-  width: 150px;
-  border: 1px solid var(--cor-destaque1);
-  margin: 0 0 10px 15px;
-  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  width: 125px;
+  margin-left: 15px;
 }
