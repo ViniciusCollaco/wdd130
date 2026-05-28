@@ -4,23 +4,19 @@
   --cor-destaque1: #000;
   --cor-destaque2: #fff;
   --fonte-titulo: "Times New Roman", "Georgia", serif;
-  --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-/* 1. Redefinição Box-Model obrigatória (IDÊNTICA ao enunciado) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 2. Estilização do Body */
 body {
-  font-family: var(--fonte-body);
   color: var(--cor-destaque1);
 }
 
-/* 3. Limitação e centralização da página em 840px */
 header,
 main,
 footer {
@@ -28,13 +24,13 @@ footer {
   margin: 0 auto;
 }
 
-/* Layout do cabeçalho */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 2px solid var(--cor-segundaria); /* Uso elegante da cor secundária sem quebrar o contraste dos links */
+  border-bottom: 2px solid var(--cor-segundaria); 
 }
 
 header .logo {
@@ -42,7 +38,6 @@ header .logo {
   height: auto;
 }
 
-/* 4. Estilização dos Títulos */
 h1,
 h2 {
   font-family: var(--fonte-titulo);
@@ -50,7 +45,7 @@ h2 {
   text-align: center;
 }
 
-/* 5. Regra combinada obrigatória (NÃO MODIFICAR para passar na auditoria) */
+
 nav,
 p,
 section,
@@ -59,13 +54,13 @@ article {
   padding: 8px;
 }
 
-/* Customização sutil da section História usando a cor secundária apenas na borda ou fundo leve */
+
 section {
-  border-left: 4px solid var(--cor-segundaria); /* Deixa o design sofisticado usando o #b8860b e mantém o padding original intacto */
-  background-color: #fcf8f2; /* Um fundo off-white suave para destacar, sem conflitar com o padding original */
+  border-left: 4px solid var(--cor-segundaria); 
+  background-color: #fcf8f2; 
 }
 
-/* Menu de navegação superior */
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -79,13 +74,10 @@ nav a {
 }
 
 nav a:hover {
-  color: var(
-    --cor-segundaria
-  ); /* Uso ideal da cor secundária no efeito dinâmico do menu! */
+  color: var(--cor-segundaria); 
   text-decoration: underline;
 }
 
-/* Layout do Rodapé */
 footer {
   display: flex;
   justify-content: space-between;
@@ -94,7 +86,6 @@ footer {
   padding: 20px 0;
 }
 
-/* 6. Regra obrigatória das redes sociais */
 .redes-sociais a {
   text-decoration: none;
 }
@@ -109,7 +100,6 @@ footer {
   height: 32px;
 }
 
-/* 7. Customização do container HERO e posicionamentos absolutos */
 .hero {
   position: relative;
 }
