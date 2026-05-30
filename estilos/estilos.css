@@ -1,6 +1,6 @@
 :root {
   /* Cores Principais do Tema */
-  --cor-primaria: darkblue;
+  --cor-primaria: ForestGreen;
   --cor-texto-escuro: #222;
   --cor-texto-suave: #333;
   --cor-fundo-claro: #eee;
@@ -11,7 +11,6 @@
   --linha-guia: 1.5;
 }
 
-/* Resetar CSS do meu projeto*/
 * {
   margin: 0;
   padding: 0;
@@ -26,28 +25,33 @@ body {
   margin: 0;
 }
 
-main {
-  max-width: 840px;
-}
-
 nav {
   background-color: var(--cor-primaria);
-  padding: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
-  color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
 }
 
 h1 {
   color: var(--cor-primaria);
+  display: inline-block;
+  border-bottom: 2px solid #333333; 
+  padding-bottom: 10px;
+  margin-left: 20px;
 }
 
 main img {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   width: 150px;
   height: auto;
   border: 1px solid var(--cor-primaria);
@@ -58,6 +62,17 @@ main img {
 
 p {
   padding: 0;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  align-items: center; 
+}
+
+main {
+  grid-column: 2 / 3;
+  margin: 1rem;
 }
 
 aside {
@@ -65,6 +80,8 @@ aside {
   color: var(--cor-texto-suave);
   text-align: center;
   position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; 
 }
 
 aside img {
@@ -84,7 +101,10 @@ footer {
   text-align: center;
 }
 
-/* Seletores de Classe */
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
 
 .caixa {
   border: 1px solid var(--cor-borda-suave);
