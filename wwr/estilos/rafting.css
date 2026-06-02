@@ -1,41 +1,35 @@
-/* --- Variáveis e Reset --- */
 :root {
-  --cor-primaria: #8b0000; /* Vermelho escuro para destaques */
-  --cor-segundaria: #b8860b; /* Dourado escuro para bordas */
-  --cor-fundo-destaque: #f4f4f4; /* Cinza claro para cabeçalho/rodapé/história */
+  --cor-primaria: #8b0000;
+  --cor-segundaria: #b8860b;
   --cor-destaque1: #000;
   --cor-destaque2: #fff;
   --fonte-titulo: "Times New Roman", "Georgia", serif;
-  --fonte-texto: Arial, Helvetica, sans-serif;
-  --largura-fixa: 840px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   color: var(--cor-destaque1);
-  font-family: var(--fonte-texto);
 }
 
-/* --- Containers Fixos (840px conforme o projeto) --- */
 header,
 main,
 footer {
-  width: var(--largura-fixa);
+  width: 840px;
   margin: 0 auto;
 }
 
-/* --- Cabeçalho (Header) --- */
+
 header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 30px 15px; 
-  background-color: var(--cor-fundo-destaque); 
+  padding: 15px 0;
   border-bottom: 2px solid var(--cor-segundaria); 
 }
 
@@ -48,33 +42,14 @@ header nav {
   display: flex;
   justify-content: flex-end; 
   margin: 0; 
-  padding: 0;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
-/* Botões do Menu */
-header nav a {
-  text-decoration: none;
-  color: var(--cor-destaque1);
-  font-weight: bold;
-  padding: 8px 16px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-header nav a:hover {
-  border-color: var(--cor-segundaria);
-  color: var(--cor-primaria);
-  background-color: var(--cor-fundo-destaque);
-}
-
-/* --- Títulos --- */
 h1,
 h2 {
   font-family: var(--fonte-titulo);
@@ -82,17 +57,64 @@ h2 {
   text-align: center;
 }
 
-p {
-  margin: 10px 0;
-  line-height: 1.5;
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
 }
 
-/* --- Seção Hero (Banner com as linhas diagonais do Wireframe) --- */
+
+section {
+  border-left: 4px solid var(--cor-segundaria); 
+  background-color: #fcf8f2; 
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--cor-segundaria); 
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: 32px;
+}
+
 .hero {
   position: relative;
-  overflow: hidden; 
-  background-color: #fff; 
-  padding-bottom: 40px;
 }
 
 .hero img {
@@ -102,144 +124,68 @@ p {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin: 20px 0;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
   text-align: center;
-  color: var(--cor-destaque1);
+  opacity: 0.7;
+  background-color: var(--cor-destaque1);
+  color: var(--cor-destaque2);
 }
 
-/* Caixa com o texto da missão sobreposta à imagem */
 .hero article {
-  position: relative;
-  width: 90%;
-  max-width: 700px;
-  margin: -60px auto 0; 
-  padding: 25px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 5px;
-  z-index: 10;
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  margin: 0 0 15px 15px;
-}
-
-/* Linhas em "X" decorativas do fundo do wireframe */
-.hero::before,
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-  z-index: 1;
-}
-
-.hero::before {
-  top: 50%;
-  transform: translateY(-50%) rotate(-15deg);
-}
-
-.hero::after {
-  bottom: 20%;
-  transform: translateY(50%) rotate(15deg);
-}
-
-/* --- Seção História (Fundo cinza e 3 colunas paralelas) --- */
-.historia-section {
-  background-color: var(--cor-fundo-destaque); 
-  padding: 40px 20px;
-  margin: 20px 0;
-}
-
-.historia-section h2 {
-  margin-bottom: 25px;
+  margin-left: 15px;
 }
 
 .historia-conteudo {
   display: grid;
-  grid-template-columns: 1fr auto 1fr; /* Texto | Imagem | Texto */
-  gap: 25px;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
   align-items: center; 
 }
 
-.historia-conteudo p {
-  text-align: justify;
-  margin: 0;
-  padding: 0;
-}
-
 .historia-img {
-  width: 180px; 
+  width: 100%;
   height: auto;
-  border: 4px solid var(--cor-segundaria); 
-  background-color: #fff;
-}
-
-/* --- Seção Aventuras (Galeria horizontal uniforme) --- */
-.aventuras-section {
-  background-color: #fff; 
-  padding: 40px 0;
-}
-
-.aventuras-section h2 {
-  margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .galeria-aventuras {
   display: flex;
   justify-content: space-between; 
-  gap: 12px; 
+  gap: 10px; 
+  margin-top: 15px;
 }
 
 .galeria-aventuras figure {
   flex: 1; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
 }
 
 .galeria-aventuras img {
   width: 100%;
-  height: 110px; 
+  height: 150px; 
   object-fit: cover; 
+  border-radius: 5px;
 }
 
 .galeria-aventuras figcaption {
-  font-size: 0.85rem;
-  margin-top: 8px;
-  color: var(--cor-destaque1);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: var(--cor-primaria);
   font-weight: bold;
-  text-align: center;
-}
-
-/* --- Rodapé (Footer) --- */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 15px;
-  background-color: var(--cor-fundo-destaque); 
-  border-top: 1px solid #ccc;
-  margin-top: 20px;
-}
-
-.redes-sociais {
-  display: flex;
-  gap: 15px;
-}
-
-.redes-sociais img {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #ccc; 
-  background-color: #fff;
-  padding: 2px;
 }
