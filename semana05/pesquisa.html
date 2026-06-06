@@ -6,6 +6,7 @@
     <title>Exercício semana 5, formulário</title>
     <meta name="description" content="Realizar um formulário de pesquisa"/>
     <meta name="author" content="Vinicius de Oliveira Collaço" />
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css" />
 </head>
 <body>
     <header>
@@ -16,45 +17,47 @@
         <form>
             <fieldset>
                 <legend>Informações de Contato</legend>
-                <br>
-                <label for="nome-completo">Nome Completo:</label>
-                <input type="text" id="nome-completo" name="nome-completo" required>
-                <br><br>
-                <label for="emaildousuario">Email:</label>
-                <input type="email" id="emaildousuario" name="emaildousuario" required>
-                <br>
-            </fieldset>
+                
+                <div class="item-formulario coluna2">
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
 
-            <br>
+                <div class="item-formulario coluna2">
+                    <label for="emaildousuario">Email:</label>
+                    <input type="email" id="emaildousuario" name="emaildousuario" required>
+                </div>
+            </fieldset>
 
             <fieldset>
                 <legend>Perguntas</legend>
-                <br>
-                <label for="navegador">Qual é o seu navegador de internet favorito?</label>
-                <select name="navegador" id="navegador">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="brave">Brave</option>
-                </select>
-                <br><br>
                 
-                <label for="pet">Você tem um animal de estimação?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <br><br>
+                <div class="item-formulario coluna1">
+                    <label for="navegador">Qual é o seu navegador de internet favorito?</label>
+                    <select name="navegador" id="navegador">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="brave">Brave</option>
+                    </select>
+                </div>
                 
-                <label for="feedback">Liste os lugares onde você morou:</label>
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Flórida,&#10;Amsterdam Holanda,&#10;Tibuktu Mali"></textarea>
-                <br>
+                <div class="item-formulario coluna1">
+                    <label for="pet">Você tem um animal de estimação?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                
+                <div class="item-formulario">
+                    <label for="feedback">Liste os lugares onde você morou:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Flórida,&#10;Amsterdam Holanda,&#10;Tibuktu Mali"></textarea>
+                </div>
             </fieldset>
 
-            <br>
             <button type="submit">Enviar Enquete</button>
         </form>
     </main>
 
-    <br>
     <footer>
-        <p>&copy;2026 | Formulário HTML - Atividade de Enquete do Usuário | Vinicius de Oliveira Collaço/p>
+        <p>&copy;2026 | Formulário HTML - Atividade de Enquete do Usuário | Vinicius de Oliveira Collaço</p>
     </footer>
 </body>
 </html>
