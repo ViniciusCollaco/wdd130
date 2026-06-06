@@ -37,12 +37,12 @@
         </p>
       </section>
 
-      <section class="contato-container">
+      <div class="contato-container">
         <div class="mapa-wrapper">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.627253303108!2d-54.5694705!3d-25.5174465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMxJzAyLjgiUyA1NLCwMzQnMTAuMSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
-            width="100%" 
-            height="100%" 
+            width="600" 
+            height="450" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
@@ -63,15 +63,20 @@
           <div class="grupo-radio">
             <span class="label-falsa">Propósito da Mensagem</span>
             <div class="opcoes-radio">
-              <label for="geral">
-                <input type="radio" name="proposito" id="geral" value="geral" checked> Dúvida Geral
-              </label>
-              <label for="reserva">
-                <input type="radio" name="proposito" id="reserva" value="reserva"> Pergunta sobre Reserva
-              </label>
-              <label for="sugestao">
-                <input type="radio" name="proposito" id="sugestao" value="sugestao"> Sugestão
-              </label>
+              <div class="radio-item">
+                <input type="radio" name="proposito" id="geral" value="geral" checked>
+                <label for="geral">Dúvida Geral</label>
+              </div>
+              
+              <div class="radio-item">
+                <input type="radio" name="proposito" id="reserva" value="reserva">
+                <label for="reserva">Pergunta sobre Reserva</label>
+              </div>
+              
+              <div class="radio-item">
+                <input type="radio" name="proposito" id="sugestao" value="sugestao">
+                <label for="sugestao">Sugestão</label>
+              </div>
             </div>
           </div>
 
@@ -87,7 +92,7 @@
 
           <button type="submit">Entrar em Contato</button>
         </form>
-      </section>
+      </div>
 
       <section class="equipe-secao">
         <h3>Estamos Aqui para Servi-lo</h3>
