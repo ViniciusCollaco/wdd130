@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fale Conosco e o nome da empresa de rafting</title>
+    <title>Fale Conosco - Duck! Rafting</title>
     <meta
       name="description"
-      content="Conato para agenda de Rafting, esporte radical e aventura em corredeiras."
+      content="Contato para agenda de Rafting, esporte radical e aventura em corredeiras."
     />
     <meta name="author" content="Vinicius de Oliveira Collaço" />
     <link rel="stylesheet" href="estilos/rafting.css" />
@@ -25,7 +25,8 @@
     </header>
 
     <main>
-      <h1>Fale Conosco</h1>
+      <h1>Fale Conosco - Duck! Rafting</h1>
+      
       <section class="empresa-info">
         <h2>Companhia de Rafting em Corredeiras</h2>
         <p class="dados-contato">
@@ -62,9 +63,15 @@
           <div class="grupo-radio">
             <span class="label-falsa">Propósito da Mensagem</span>
             <div class="opcoes-radio">
-              <label><input type="radio" name="proposito" value="geral" checked> Dúvida Geral</label>
-              <label><input type="radio" name="proposito" value="reserva"> Pergunta sobre Reserva</label>
-              <label><input type="radio" name="proposito" value="sugestao"> Sugestão</label>
+              <label for="geral">
+                <input type="radio" name="proposito" id="geral" value="geral" checked> Dúvida Geral
+              </label>
+              <label for="reserva">
+                <input type="radio" name="proposito" id="reserva" value="reserva"> Pergunta sobre Reserva
+              </label>
+              <label for="sugestao">
+                <input type="radio" name="proposito" id="sugestao" value="sugestao"> Sugestão
+              </label>
             </div>
           </div>
 
