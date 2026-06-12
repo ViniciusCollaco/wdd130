@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duck! Rafting - Página Inicial</title>
-    <meta name="description" content="A aventura da sua vida nas corredeiras mais emocionantes do Brasil com a Duck! Rafting. Seguranca e adrenalina."/>
+    <meta name="description" content="A aventura da sua vida nas corredeiras mais emocionantes do Brasil com a Duck! Rafting. Segurança e adrenalina completas."/>
     <meta name="author" content="Vinicius de Oliveira Collaço" />
     <link rel="stylesheet" href="estilos/rafting.css" />
 </head>
 <body>
     <header>
-        <img src="imagens/logo.png" alt="Logotipo Agua Brava" class="logo" />
+        <img src="imagens/logo.png" alt="Logotipo Água Brava" class="logo" />
         <nav>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
@@ -22,6 +22,7 @@
     </header>
 
     <main>
+        <!-- Bloco Hero com imagem principal e mensagem sobreposta com posicionamento absoluto -->
         <div class="hero">
             <img src="imagens/principal.jpg" alt="Equipe navegando em corredeiras com botes da Duck Rafting" />
             <h1>Sinta a Força das Águas</h1>
@@ -31,29 +32,32 @@
                     Pronto para a jornada? A vida é cheia de desafios e incertezas, mas nas corredeiras da vida e dos rios, nós guiamos você com segurança total. 
                     <br><br>
                     <strong>Não espere o rio acalmar:</strong> Conheça nossas opções exclusivas e agende sua descida agora mesmo!
-                    <a href="passeios.html" class="cta-link-home" style="display: block; margin-top: 10px; color: var(--cor-primaria); font-weight: bold; text-decoration: underline;">Ver Todos os Passeios →</a>
                 </p>
+                <!-- Chamada para ação vinculando para a página de passeios -->
+                <a href="passeios.html" style="display: inline-block; margin-top: 10px; color: var(--cor-primaria); font-weight: bold; text-decoration: underline;">Ver Todos os Passeios →</a>
             </article>
         </div>
 
-        <section class="historia-section" style="border-left: 4px solid var(--cor-segundaria); margin-top: 30px;">
+        <!-- Seção de Conteúdo utilizando layout CSS Grid (.historia-conteudo) com duas imagens e textos correspondentes -->
+        <section class="grid-ofertas" style="margin-top: 30px;">
             <h2>Por Que Escolher a Duck! Rafting?</h2>
             <div class="historia-conteudo">
                 <p>
-                    <strong>Segurança em Primeiro Lugar:</strong> Utilizamos apenas botes de última geração e equipamentos certificados internacionalmente. Nossos guias possuem treinamento de resgate avançado para garantir que sua única preocupação seja curtir a adrenalina.
+                    <strong>Aventuras para Todos:</strong> Seja você um iniciante em busca de diversão em família ou um veterano caçador de adrenalina nível V, temos o circuito perfeito desenhado para o seu limite.
                 </p>
                 <img src="imagens/equipamento.jpg" alt="Equipamentos utilizados pela Duck Rafting" class="historia-img">
                 <p>
-                    <strong>Aventuras para Todos:</strong> Seja você um iniciante em busca de diversão em família ou um veterano caçador de adrenalina nível V, temos o circuito perfeito desenhado para o seu limite.
+                    <strong>Segurança em Primeiro Lugar:</strong> Utilizamos apenas botes de última geração e equipamentos certificados internacionalmente. Nossos guias possuem treinamento de resgate avançado para garantir sua tranquilidade.
                 </p>
             </div>
         </section>
 
-        <section class="equipe-secao" style="margin-top: 30px; background-color: #fcf8f2; border: 1fr solid #ccc;">
-            <h3 style="text-align: center; font-family: var(--fonte-titulo); color: var(--cor-primaria); margin-bottom: 15px;">Fique por Dentro das Corredeiras</h3>
-            <p style="text-align: center; margin-bottom: 15px;">Inscreva-se em nossa newsletter e receba cupons de desconto, relatos de expedições e novidades diretamente no seu e-mail.</p>
+        <!-- Formulário de Newsletter usando as classes corretas do seu CSS unificado -->
+        <section class="newsletter-secao">
+            <h3>Fique por Dentro das Corredeiras</h3>
+            <p>Inscreva-se em nossa newsletter e receba cupons de desconto, relatos de expedições e novidades diretamente no seu e-mail.</p>
             
-            <form action="#" method="post" class="form-contato" style="max-width: 500px; margin: 0 auto;">
+            <form action="#" method="post" class="form-newsletter">
                 <div class="grupo-campo">
                     <label for="nome_news">Nome Completo</label>
                     <input type="text" id="nome_news" name="nome_news" placeholder="Digite seu nome" required>
@@ -62,7 +66,7 @@
                     <label for="email_news">E-mail Cadastrado</label>
                     <input type="email" id="email_news" name="email_news" placeholder="seu-email@provedor.com" required>
                 </div>
-                <button type="submit" style="margin-top: 10px;">Quero Receber Novidades</button>
+                <button type="submit">Quero Receber Novidades</button>
             </form>
         </section>
     </main>
@@ -73,7 +77,7 @@
             <a href="https://web.whatsapp.com/"><img src="imagens/whatsapp.svg" alt="ícone do WhatsApp" /></a>
             <a href="https://www.instagram.com/"><img src="imagens/instagram.svg" alt="ícone do Instagram" /></a>
             <a href="https://www.youtube.com/"><img src="imagens/youtube.svg" alt="ícone do Youtube" /></a>
-        </</nav>
+        </nav>
     </footer>
 </body>
 </html>
