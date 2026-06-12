@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck! Rafting - Nossos Passeios</title>
+    <meta name="description" content="Conheca as modalidades de rafting oferecidas pela Duck! Rafting: do iniciante ao extremo. Confira nossa tabela de precos."/>
+    <meta name="author" content="Vinicius de Oliveira Collaço" />
+    <link rel="stylesheet" href="estilos/rafting.css" />
+    <style>
+
+        .tabela-passeios {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        .tabela-passeios th, .tabela-passeios td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        .tabela-passeios th {
+            background-color: var(--cor-primaria);
+            color: var(--cor-destaque2);
+        }
+        .tabela-passeios tr:nth-child(even) {
+            background-color: #fcf8f2;
+        }
+        .btn-cta-passeios {
+            display: inline-block;
+            background-color: var(--cor-segundaria);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+        .btn-cta-passeios:hover {
+            background-color: var(--cor-primaria);
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Agua Brava" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nossas Aventuras nas Corredeiras</h1>
+        
+        <div style="text-align: center; margin: 25px 0;">
+            <p style="font-size: 1.2rem; margin-bottom: 10px;">Ficou com alguma dúvida ou quer montar um pacote personalizado para grupos?</p>
+            <a href="contato.html" class="btn-cta-passeios">Reserve Seu Passeio Conosco!</a>
+        </div>
+
+        <section class="equipe-secao" style="background-color: transparent; padding: 0;">
+            <h2>Modalidades Disponíveis</h2>
+            <div class="equipe-grid" style="margin-top: 20px;">
+                
+                <figure class="membro-card">
+                    <img src="imagens/introdução_light.jpg" alt="Rafting Familiar Rio Paranapanema" style="border-radius: 8px; width: 100%; height: 150px;">
+                    <figcaption style="margin-top: 10px;">
+                        <strong style="color: var(--cor-primaria); font-size: 1.1rem;">Introdução Light</strong><br><br>
+                        Perfeito para crianças e iniciantes. Realizado em águas calmas de Nível I e II, focando na contemplação e na diversão segura.
+                    </figcaption>
+                </figure>
+                
+                <figure class="membro-card">
+                    <img src="imagens/expedição_adrenalina.jpg" alt="Rafting Adrenalina Rio Jacare" style="border-radius: 8px; width: 100%; height: 150px;">
+                    <figcaption style="margin-top: 10px;">
+                        <strong style="color: var(--cor-primaria); font-size: 1.1rem;">Expedição Adrenalina</strong><br><br>
+                        Para quem busca emoção moderada (Nível III e IV). Quedas acentuadas e ação coordenada em equipe comandada por nosso guia.
+                    </figcaption>
+                </figure>
+                
+                <figure class="membro-card">
+                    <img src="imagens/desafio_extremo.jpg" alt="Rafting Extremo Queda do Itarare" style="border-radius: 8px; width: 100%; height: 150px;">
+                    <figcaption style="margin-top: 10px;">
+                        <strong style="color: var(--cor-primaria); font-size: 1.1rem;">Desafio Extremo</strong><br><br>
+                        Destinado a veteranos (Nível V). Corredeiras rápidas, passagens estreitas e adrenalina máxima na icônica Queda do Itararé.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section style="margin-top: 40px; padding: 20px; border-left: 4px solid var(--cor-primaria);">
+            <h2>Tabela Comparativa de Percursos</h2>
+            <table class="tabela-passeios">
+                <thead>
+                    <tr>
+                        <th>Passeio</th>
+                        <th>Duração</th>
+                        <th>Dificuldade</th>
+                        <th>Incluso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Introdução Light</strong></td>
+                        <td>1h 30min</td>
+                        <td>Nível I - II (Fácil)</td>
+                        <td>Bote, Colete, Capacete, Guia e Lanche</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expedição Adrenalina</strong></td>
+                        <td>2h 45min</td>
+                        <td>Nível III - IV (Médio)</td>
+                        <td>Bote Pro, Equipamento, Fotos Digitais e Guia</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Desafio Extremo</strong></td>
+                        <td>4h 00min</td>
+                        <td>Nível V (Avançado)</td>
+                        <td>Equipamento Premium, Seguro Atleta, Guia e Almoço</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 Duck! | Vinicius de Oliveira Collaço</p>
+        <nav class="redes-sociais">
+            <a href="https://web.whatsapp.com/"><img src="imagens/whatsapp.svg" alt="ícone do WhatsApp" /></a>
+            <a href="https://www.instagram.com/"><img src="imagens/instagram.svg" alt="ícone do Instagram" /></a>
+            <a href="https://www.youtube.com/"><img src="imagens/youtube.svg" alt="ícone do Youtube" /></a>
+        </nav>
+    </footer>
+</body>
+</html>

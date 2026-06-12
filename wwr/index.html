@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck! Rafting - Página Inicial</title>
+    <meta name="description" content="A aventura da sua vida nas corredeiras mais emocionantes do Brasil com a Duck! Rafting. Seguranca e adrenalina."/>
+    <meta name="author" content="Vinicius de Oliveira Collaço" />
+    <link rel="stylesheet" href="estilos/rafting.css" />
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Agua Brava" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="imagens/principal.jpg" alt="Equipe navegando em corredeiras com botes da Duck Rafting" />
+            <h1>Sinta a Força das Águas</h1>
+            <article>
+                <img src="imagens/agua_brava.jpg" alt="Clientes equipados no bote" />
+                <p>
+                    Pronto para a jornada? A vida é cheia de desafios e incertezas, mas nas corredeiras da vida e dos rios, nós guiamos você com segurança total. 
+                    <br><br>
+                    <strong>Não espere o rio acalmar:</strong> Conheça nossas opções exclusivas e agende sua descida agora mesmo!
+                    <a href="passeios.html" class="cta-link-home" style="display: block; margin-top: 10px; color: var(--cor-primaria); font-weight: bold; text-decoration: underline;">Ver Todos os Passeios →</a>
+                </p>
+            </article>
+        </div>
+
+        <section class="historia-section" style="border-left: 4px solid var(--cor-segundaria); margin-top: 30px;">
+            <h2>Por Que Escolher a Duck! Rafting?</h2>
+            <div class="historia-conteudo">
+                <p>
+                    <strong>Segurança em Primeiro Lugar:</strong> Utilizamos apenas botes de última geração e equipamentos certificados internacionalmente. Nossos guias possuem treinamento de resgate avançado para garantir que sua única preocupação seja curtir a adrenalina.
+                </p>
+                <img src="imagens/equipamento.jpg" alt="Equipamentos utilizados pela Duck Rafting" class="historia-img">
+                <p>
+                    <strong>Aventuras para Todos:</strong> Seja você um iniciante em busca de diversão em família ou um veterano caçador de adrenalina nível V, temos o circuito perfeito desenhado para o seu limite.
+                </p>
+            </div>
+        </section>
+
+        <section class="equipe-secao" style="margin-top: 30px; background-color: #fcf8f2; border: 1fr solid #ccc;">
+            <h3 style="text-align: center; font-family: var(--fonte-titulo); color: var(--cor-primaria); margin-bottom: 15px;">Fique por Dentro das Corredeiras</h3>
+            <p style="text-align: center; margin-bottom: 15px;">Inscreva-se em nossa newsletter e receba cupons de desconto, relatos de expedições e novidades diretamente no seu e-mail.</p>
+            
+            <form action="#" method="post" class="form-contato" style="max-width: 500px; margin: 0 auto;">
+                <div class="grupo-campo">
+                    <label for="nome_news">Nome Completo</label>
+                    <input type="text" id="nome_news" name="nome_news" placeholder="Digite seu nome" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="email_news">E-mail Cadastrado</label>
+                    <input type="email" id="email_news" name="email_news" placeholder="seu-email@provedor.com" required>
+                </div>
+                <button type="submit" style="margin-top: 10px;">Quero Receber Novidades</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 Duck! | Vinicius de Oliveira Collaço</p>
+        <nav class="redes-sociais">
+            <a href="https://web.whatsapp.com/"><img src="imagens/whatsapp.svg" alt="ícone do WhatsApp" /></a>
+            <a href="https://www.instagram.com/"><img src="imagens/instagram.svg" alt="ícone do Instagram" /></a>
+            <a href="https://www.youtube.com/"><img src="imagens/youtube.svg" alt="ícone do Youtube" /></a>
+        </</nav>
+    </footer>
+</body>
+</html>
