@@ -424,7 +424,6 @@ footer {
   text-decoration: none;
 }
 
-
 .tabela-secao {
   margin-top: 40px;
   padding: 20px;
@@ -456,4 +455,21 @@ footer {
 
 .tabela-passeios tr:nth-child(even) {
   background-color: #fcf8f2;
+}
+
+.hero .hero-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  margin: 16px;
+  padding: 8px;
+}
+
+.hero .hero-card img {
+  float: right;
+  width: 125px;
+  margin-left: 15px;
 }
