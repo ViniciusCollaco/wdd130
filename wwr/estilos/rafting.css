@@ -360,11 +360,6 @@ footer {
   line-height: 1.4;
 }
 
-/* ==========================================================================
-   NOVOS ESTILOS: PAGINA INICIAL E PASSEIOS (Para Nota Máxima)
-   ========================================================================== */
-
-/* --- Newsletter (Página Inicial) --- */
 .newsletter-secao {
   margin-top: 30px;
   background-color: #fcf8f2;
@@ -411,7 +406,6 @@ footer {
   background-color: var(--cor-segundaria);
 }
 
-/* --- Chamadas para Ação (CTAs) --- */
 .btn-cta-passeios {
   display: inline-block;
   background-color: var(--cor-segundaria);
@@ -430,7 +424,7 @@ footer {
   text-decoration: none;
 }
 
-/* --- Tabela de Passeios (Página Passeios) --- */
+
 .tabela-secao {
   margin-top: 40px;
   padding: 20px;
